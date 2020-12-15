@@ -33,8 +33,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Users\Tobi-PC\Documents\GitHub\ownwebpage\ownwebpage" />
       <recent name="D:\Users\Tobi-PC\Documents\GitHub\ownwebpage" />
+      <recent name="D:\Users\Tobi-PC\Documents\GitHub\ownwebpage\ownwebpage" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -51,6 +51,7 @@
       <workItem from="1607583933883" duration="8911000" />
       <workItem from="1607964173246" duration="4000" />
       <workItem from="1608022598031" duration="1281000" />
+      <workItem from="1608024012625" duration="175000" />
     </task>
     <servers />
   </component>
@@ -70,6 +71,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1882" height="279" key="GridCell.Tab.0.bottom" timestamp="1608024149778">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1882" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.7.1920.1040@0.0.1920.1040" timestamp="1608024149778" />
+    <state width="1882" height="279" key="GridCell.Tab.0.center" timestamp="1608024149778">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1882" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.7.1920.1040@0.0.1920.1040" timestamp="1608024149778" />
+    <state width="1882" height="279" key="GridCell.Tab.0.left" timestamp="1608024149778">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1882" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.7.1920.1040@0.0.1920.1040" timestamp="1608024149778" />
+    <state width="1882" height="279" key="GridCell.Tab.0.right" timestamp="1608024149778">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1882" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.7.1920.1040@0.0.1920.1040" timestamp="1608024149778" />
     <state x="781" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607585937755">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
