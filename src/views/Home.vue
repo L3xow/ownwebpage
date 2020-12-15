@@ -10,10 +10,11 @@
   <section class="home">
     <div class="home-content">
       <div class="home-presentation">
-        <h1>Home</h1>
-        <p>Test</p>
+        <h1>Welcome to my Homepage!</h1>
+        <p>This is my very first Homepage!</p>
+        <p>I´m happy and pleased to welcome you on my Page!</p>
       </div>
-      <img src="../assets/home.svg"/>
+      <img class="image" src="../assets/mobile-phone-shows-the-word-create-on-a-white-table.jpg"/>
     </div>
   </section>
 </template>
@@ -38,7 +39,7 @@
     margin-left: auto;
     list-style: none;
   }
-  
+
   .nav-links {
     text-decoration: none;
     color: black;
@@ -56,6 +57,11 @@
     height: 85vh;
     position: absolute;
     width: 100%;
+  }
+
+  .image {
+    height: 50vh;
+    border-radius: 100vh;
   }
 
 </style>
