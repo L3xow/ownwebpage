@@ -1,17 +1,21 @@
 <template>
-  <div class="home">
-    <div class="navigation_home">
-      <nav>
-        <router-link to="/About">
-          <div class="navigation_aboutme">
-            About Me
-          </div>
-        </router-link>
-      </nav>
+  <nav>
+    <ul class="nav-list">
+        <li><router-link class="nav-links" to="/">Home</router-link></li>
+        <li><router-link class="nav-links" to="About">About</router-link></li>
+        <li><router-link class="nav-links" to="Contact">Contact</router-link></li>
+    </ul>
+  </nav>
+  <main></main>
+  <section class="home">
+    <div class="home-content">
+      <div class="home-presentation">
+        <h1>Home</h1>
+        <p>Test</p>
+      </div>
+      <img src="../assets/home.svg"/>
     </div>
-    <div class="navigation_footer">
-    </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -21,21 +25,37 @@
 
 
   nav {
-    padding: 50px 20%;
-    background-color: grey;
-    color: white;
-    z-index: 3;
-    font-weight: bold;
-    font-size: 30px;
+    margin-top: -20px;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
   }
 
-  .navigation_footer {
-    z-index: 2;
-    background: grey;
-    padding: 50px;
-    transform: skewY(-2deg);
-    position: relative;
-    margin-top: -50px;
+  .nav-list {
+    height: 10vh;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+  }
+  
+  .nav-links {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .home-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .home {
+    height: 85vh;
+    position: absolute;
+    width: 100%;
   }
 
 </style>

@@ -2,8 +2,11 @@
   <div class="about">
     <div class="navigation_header">
       <nav>
-        <router-link to="/">Home</router-link>
-        <router-link tag="asdf" class="asdf" to="About">About Me</router-link>
+        <ul class="nav-list">
+          <li><router-link class="nav-links" to="/">Home</router-link></li>
+          <li><router-link class="nav-links" to="About">About</router-link></li>
+          <li><router-link class="nav-links" to="Contact">Contact</router-link></li>
+        </ul>
       </nav>
     </div>
     <div class="navigation_footer"></div>
@@ -16,10 +19,7 @@
 </template>
 
 
-
-
 <script>
-
 </script>
 
 
@@ -28,39 +28,30 @@
 
 <style lang="scss" scoped>
 
-  .about {
-    position: relative;
-  }
 
   nav {
-    padding: 50px 20%;
-    background-color: grey;
-    color: white;
-    z-index: 3;
+    margin-top: -20px;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  }
+
+  .nav-list {
+    height: 10vh;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+  }
+
+  .nav-links {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
     font-weight: bold;
-    font-size: 30px;
-  }
-
-  .navigation_footer {
-    z-index: 2;
-    background: grey;
-    padding: 50px;
-    transform: skewY(-2deg);
-    position: relative;
-    margin-top: -50px;
-  }
-
-  .showcase_text {
-    font-weight: bold;
-    font-size: 20px;
-    position: relative;
-    top: 20px;
-    left: 50px;
   }
 
 
-  .asdf {
-    color: red;
-  }
+
 
 </style>

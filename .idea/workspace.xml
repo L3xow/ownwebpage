@@ -16,6 +16,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -52,6 +59,9 @@
       <workItem from="1607964173246" duration="4000" />
       <workItem from="1608022598031" duration="1281000" />
       <workItem from="1608024012625" duration="175000" />
+      <workItem from="1608024200044" duration="525000" />
+      <workItem from="1608024763478" duration="1898000" />
+      <workItem from="1608050603593" duration="2148000" />
     </task>
     <servers />
   </component>
@@ -95,5 +105,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="628" y="242" key="run.anything.popup/0.0.1920.1040/-1920.7.1920.1040@0.0.1920.1040" timestamp="1607587313380" />
+    <state x="635" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1608051394005">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="635" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.7.1920.1040@0.0.1920.1040" timestamp="1608051394005" />
   </component>
 </project>
