@@ -1,17 +1,26 @@
 <template>
-    <nav>
-        <ul class="nav-list">
-            <li><router-link class="nav-links" to="/">Home</router-link></li>
-            <li><router-link class="nav-links" to="About">About</router-link></li>
-            <li><router-link class="nav-links" to="Contact">Contact</router-link></li>
-        </ul>
-    </nav>
+
+    <div class="contact">
+
+        <a href="../components/Nur%20Mietvertrag.pdf">Claim Form</a>
+        <nav>
+            <ul class="nav-list">
+                <li><router-link class="nav-links" to="/">Home</router-link></li>
+                <li><router-link class="nav-links" to="About">About</router-link></li>
+                <li><router-link class="nav-links" to="Contact">Contact</router-link></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
 </template>
 
 
 
-
 <script>
+
+
 </script>
 
 <style lang="scss" scoped>
