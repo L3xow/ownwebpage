@@ -1,5 +1,4 @@
 <template>
-
   <router-view></router-view>
 </template>
 
@@ -12,5 +11,9 @@
   color: #2c3e50;
 }
 
-
+.content-wrapper {
+  max-width: 840px;
+  margin: 42px auto;
+  padding: 21px;
+}
 </style>

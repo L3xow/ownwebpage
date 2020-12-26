@@ -20,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -35,13 +36,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="LET" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Tobi-PC\Documents\GitHub\ownwebpage\src\router" />
+      <recent name="D:\Users\Tobi-PC\Documents\GitHub\ownwebpage\src\views" />
+      <recent name="D:\Users\Tobi-PC\Documents\GitHub\ownwebpage\src" />
+      <recent name="D:\Users\Tobi-PC\Documents\GitHub\ownwebpage\src\assets" />
       <recent name="D:\Users\Tobi-PC\Documents\GitHub\ownwebpage" />
-      <recent name="D:\Users\Tobi-PC\Documents\GitHub\ownwebpage\ownwebpage" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -62,7 +67,15 @@
       <workItem from="1608024200044" duration="525000" />
       <workItem from="1608024763478" duration="1898000" />
       <workItem from="1608050603593" duration="3965000" />
-      <workItem from="1608056645641" duration="1340000" />
+      <workItem from="1608056645641" duration="5539000" />
+      <workItem from="1608111300684" duration="4695000" />
+      <workItem from="1608131882465" duration="1938000" />
+      <workItem from="1608540509831" duration="10070000" />
+      <workItem from="1608622686176" duration="2117000" />
+      <workItem from="1608652257553" duration="4581000" />
+      <workItem from="1608711182980" duration="1208000" />
+      <workItem from="1608817265688" duration="19802000" />
+      <workItem from="1608973726515" duration="20684000" />
     </task>
     <servers />
   </component>
@@ -82,6 +95,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="734" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608549985496">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="734" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.7.1920.1040@0.0.1920.1040" timestamp="1608549985496" />
     <state width="1882" height="279" key="GridCell.Tab.0.bottom" timestamp="1608024149778">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -98,17 +115,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1882" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.7.1920.1040@0.0.1920.1040" timestamp="1608024149778" />
-    <state x="781" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607585937755">
+    <state x="781" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608551534340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="781" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.7.1920.1040@0.0.1920.1040" timestamp="1607585937755" />
-    <state x="628" y="242" key="run.anything.popup" timestamp="1607587313380">
+    <state x="781" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.7.1920.1040@0.0.1920.1040" timestamp="1608551534340" />
+    <state x="628" y="242" key="run.anything.popup" timestamp="1608625829605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="628" y="242" key="run.anything.popup/0.0.1920.1040/-1920.7.1920.1040@0.0.1920.1040" timestamp="1607587313380" />
-    <state x="635" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1608051394005">
+    <state x="628" y="242" key="run.anything.popup/0.0.1920.1040/-1920.7.1920.1040@0.0.1920.1040" timestamp="1608625829605" />
+    <state x="635" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1609001986468">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="635" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.7.1920.1040@0.0.1920.1040" timestamp="1608051394005" />
+    <state x="635" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.7.1920.1040@0.0.1920.1040" timestamp="1609001986468" />
   </component>
 </project>

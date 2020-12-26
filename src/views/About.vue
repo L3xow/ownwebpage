@@ -1,26 +1,49 @@
 <template>
-  <div class="about">
     <div class="navigation_header">
       <nav>
         <ul class="nav-list">
           <li><router-link class="nav-links" to="/">Home</router-link></li>
-          <li><router-link class="nav-links" to="About">About</router-link></li>
-          <li><router-link class="nav-links" to="Contact">Contact</router-link></li>
+          <li><router-link class="nav-links" to="about">About</router-link></li>
+          <li><router-link class="nav-links" to="blog">Blog</router-link></li>
         </ul>
       </nav>
     </div>
-    <div class="navigation_footer"></div>
-    <div class="body">
-      <div class="showcase_text">
-        lorem ipsum
+  <div class="page" v-if="page">
+    <article class="content-wrapper">
+      <h2> {{ page.fields.title }}</h2>
+      <div class="content" v-html="page.fields.content.html">
       </div>
-    </div>
+    </article>
   </div>
 </template>
 
 
 <script>
 
+  import { comfortable } from '../comfortable'
+
+  export default {
+    name: 'page',
+    data () {
+      return {
+        page: null
+      }
+    },
+    methods: {
+      getPage() {
+        comfortable.getAlias(this.$route.params.slug)
+        .then(result => {
+          this.page = result;
+        })
+        .catch (err => {
+          throw err;
+        })
+      }
+    },
+    created() {
+      this.getPage();
+    }
+  }
 
 </script>
 
