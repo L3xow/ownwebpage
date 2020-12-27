@@ -39,12 +39,16 @@
           <div class="temp2">{{ Math.round(weather.daily[2].temp.day) }}°C</div>
           <div class="temp3">{{ Math.round(weather.daily[3].temp.day) }}°C</div>
           <div class="temp4">{{ Math.round(weather.daily[4].temp.day) }}°C</div>
-          <div id="weather" class="weather0">{{ weather.daily[0].weather[0].main }}</div>
-          <div class="weather1">{{ weather.daily[1].weather[0].main }}</div>
-          <div class="weather2">{{ weather.daily[2].weather[0].main }}</div>
-          <div class="weather3">{{ weather.daily[3].weather[0].main }}</div>
-          <div class="weather4">{{ weather.daily[4].weather[0].main }}</div>
-
+          <div class="weather0">{{ weather.daily[0].weather[0].main }} </div>
+          <div class="weather1">{{ weather.daily[1].weather[0].main }} </div>
+          <div class="weather2">{{ weather.daily[2].weather[0].main }} </div>
+          <div class="weather3">{{ weather.daily[3].weather[0].main }} </div>
+          <div class="weather4">{{ weather.daily[4].weather[0].main }} </div>
+          <div class="weather0icon"><img :src="`https://openweathermap.org/img/w/${weather.daily[0].weather[0].icon}.png`"/></div>
+          <div class="weather1icon"><img :src="`https://openweathermap.org/img/w/${weather.daily[1].weather[0].icon}.png`"/> </div>
+          <div class="weather2icon"><img :src="`https://openweathermap.org/img/w/${weather.daily[2].weather[0].icon}.png`"/></div>
+          <div class="weather3icon"><img :src="`https://openweathermap.org/img/w/${weather.daily[3].weather[0].icon}.png`"/></div>
+          <div class="weather4icon"><img :src="`https://openweathermap.org/img/w/${weather.daily[4].weather[0].icon}.png`"/></div>
       </div>
     </div>
 
@@ -53,7 +57,7 @@
 
 <script>
 
-
+//
 
 
 
@@ -104,6 +108,7 @@
 
       setWeather(results) {
         this.weather = results;
+        console.log(this.weather);
 
 //        console.log(this.weather)
 //        console.log(typeof this.weather.current)
@@ -256,7 +261,7 @@
 
     display: grid;
     grid-column-gap: 10px;
-    grid-row-gap: 20px;
+    grid-row-gap: 10px;
     color: black;
     font-size: 20px;
     font-weight: 500;
@@ -304,133 +309,140 @@
 
       .temp0 {
         padding: 10px 10px;
-        color: white;
-        font-size: 70px;
+        color: black;
+        font-size: 40px;
         font-weight: 900;
 
         text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         //      background-color: rgba(255, 255, 255, 0.25);
-        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-        border-radius: 16px;
         margin: 10px 40px;
 
-        box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         grid-column: 1;
         grid-row: 3;
       }
 
       .temp1 {
         padding: 10px 10px;
-        color: white;
-        font-size: 70px;
+        color: black;
+        font-size: 40px;
         font-weight: 900;
 
         text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         //      background-color: rgba(255, 255, 255, 0.25);
-        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-        border-radius: 16px;
         margin: 10px 40px;
 
-        box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         grid-column: 2;
         grid-row: 3;
       }
 
       .temp2 {
         padding: 10px 10px;
-        color: white;
-        font-size: 70px;
+        color: black;
+        font-size: 40px;
         font-weight: 900;
 
         text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         //      background-color: rgba(255, 255, 255, 0.25);
-        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-        border-radius: 16px;
         margin: 10px 40px;
 
-        box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         grid-column: 3;
         grid-row: 3;
       }
 
       .temp3 {
         padding:10px 10px;
-        color: white;
-        font-size: 70px;
+        color: black;
+        font-size: 40px;
         font-weight: 900;
 
         text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         //      background-color: rgba(255, 255, 255, 0.25);
-        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-        border-radius: 16px;
         margin: 10px 40px;
 
-        box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         grid-column: 4;
         grid-row: 3;
       }
 
       .temp4 {
         padding: 10px 10px;
-        color: white;
-        font-size: 70px;
+        color: black;
+        font-size: 40px;
         font-weight: 900;
 
         text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         //      background-color: rgba(255, 255, 255, 0.25);
-        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-        border-radius: 16px;
         margin: 10px 40px;
 
-        box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         grid-column: 5;
         grid-row: 3;
       }
     }
+
+    .weather0icon {
+      grid-row: 4;
+      grid-column: 1;
+
+    }
+    .weather1icon {
+      grid-row: 4;
+      grid-column: 2;
+    }
+    .weather2icon {
+      grid-row: 4;
+      grid-column: 3;
+    }
+    .weather3icon {
+      grid-row: 4;
+      grid-column: 4;
+    }
+    .weather4icon {
+      grid-row: 4;
+      grid-column: 5;
+    }
   
     .weather0 {
       margin-top: -20px;
-      font-size: 48px;
+      font-size: 28px;
       font-weight: 700;
       font-style: italic;
       text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
-      grid-row: 4;
+      grid-row: 5;
       grid-column: 1;
     }
     .weather1 {
       margin-top: -20px;
-      font-size: 48px;
+      font-size: 28px;
       font-weight: 700;
       font-style: italic;
       text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
-      grid-row: 4;
+      grid-row: 5;
       grid-column: 2;
     }
     .weather2 {
       margin-top: -20px;
-      font-size: 48px;
+      font-size: 28px;
       font-weight: 700;
       font-style: italic;
       text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
-      grid-row: 4;
+      grid-row: 5;
       grid-column: 3;
     }
     .weather3 {
       margin-top: -20px;
-      font-size: 48px;
+      font-size: 28px;
       font-weight: 700;
       font-style: italic;
       text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
-      grid-row: 4;
+      grid-row: 5;
       grid-column: 4;
     }
     .weather4 {
       margin-top: -20px;
-      font-size: 48px;
+      font-size: 28px;
       font-weight: 700;
       font-style: italic;
       text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
-      grid-row: 4;
+      grid-row: 5;
       grid-column: 5;
     }
 
