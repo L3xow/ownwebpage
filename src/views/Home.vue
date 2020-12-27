@@ -29,27 +29,21 @@
     <div class="weather-wrap" v-if="typeof weather.current != 'undefined'">
       <div class="weather-wrap-container">
         <div class="location">{{ query }}, {{ country_code }}</div>
-        <div class="date-container">
           <div class="date0">{{ dateBuilder(weather.daily[0].dt) }}</div>
           <div class="date1">{{ dateBuilder(weather.daily[1].dt) }}</div>
           <div class="date2">{{ dateBuilder(weather.daily[2].dt) }}</div>
           <div class="date3">{{ dateBuilder(weather.daily[3].dt) }}</div>
           <div class="date4">{{ dateBuilder(weather.daily[4].dt) }}</div>
-        </div>
-        <div class="temp-container">
           <div class="temp0">{{ Math.round(weather.daily[0].temp.day) }}°C</div>
           <div class="temp1">{{ Math.round(weather.daily[1].temp.day) }}°C</div>
           <div class="temp2">{{ Math.round(weather.daily[2].temp.day) }}°C</div>
           <div class="temp3">{{ Math.round(weather.daily[3].temp.day) }}°C</div>
           <div class="temp4">{{ Math.round(weather.daily[4].temp.day) }}°C</div>
-        </div>
-        <div class="weather-container">
-          <div class="weather0">{{ weather.daily[0].weather[0].main }}</div>
+          <div id="weather" class="weather0">{{ weather.daily[0].weather[0].main }}</div>
           <div class="weather1">{{ weather.daily[1].weather[0].main }}</div>
           <div class="weather2">{{ weather.daily[2].weather[0].main }}</div>
           <div class="weather3">{{ weather.daily[3].weather[0].main }}</div>
           <div class="weather4">{{ weather.daily[4].weather[0].main }}</div>
-        </div>
 
       </div>
     </div>
@@ -260,48 +254,53 @@
 
   .weather-wrap-container {
 
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    grid-template-columns:repeat(5, 1fr);
+
     .location {
       color: black;
       font-size: 32px;
       font-weight: 500;
       text-shadow: 1px 3px rgba(0, 0, 0, 0.25);
+      grid-row: 1;
+      grid-column: 3;
     }
 
-    .date-container {
-      display: grid;
-      grid-column-gap: 35px;
-      grid-row-gap: 20px;
-      color: black;
-      font-size: 20px;
-      font-weight: 500;
-      font-style: italic;
-      grid-column-start: 1;
-      grid-column-end: 5;
 
       .date0 {
+        grid-row: 2;
         grid-column: 1;
       }
       .date1 {
+        grid-row: 2;
         grid-column: 2;
       }
       .date2 {
+        grid-row: 2;
         grid-column: 3;
       }
       .date3 {
+        grid-row: 2;
         grid-column: 4;
       }
       .date4 {
+        grid-row: 2;
         grid-column: 5;
       }
-    }
 
-    .temp-container {
-      display: inline-grid;
-      grid-column-gap: 20vh;
-      grid-row-gap: 20px;
-//      display: inline-block;
-      grid-column-start: 1;
-      grid-column-end: 5;
 
       .temp0 {
         padding: 10px 10px;
@@ -313,10 +312,11 @@
         //      background-color: rgba(255, 255, 255, 0.25);
         background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
         border-radius: 16px;
-        margin: 30px 0px;
+        margin: 10px 40px;
 
         box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         grid-column: 1;
+        grid-row: 3;
       }
 
       .temp1 {
@@ -329,10 +329,11 @@
         //      background-color: rgba(255, 255, 255, 0.25);
         background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
         border-radius: 16px;
-        margin: 30px 0px;
+        margin: 10px 40px;
 
         box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         grid-column: 2;
+        grid-row: 3;
       }
 
       .temp2 {
@@ -345,14 +346,15 @@
         //      background-color: rgba(255, 255, 255, 0.25);
         background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
         border-radius: 16px;
-        margin: 30px 0px;
+        margin: 10px 40px;
 
         box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         grid-column: 3;
+        grid-row: 3;
       }
 
       .temp3 {
-        padding: 10px 10px;
+        padding:10px 10px;
         color: white;
         font-size: 70px;
         font-weight: 900;
@@ -361,10 +363,11 @@
         //      background-color: rgba(255, 255, 255, 0.25);
         background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
         border-radius: 16px;
-        margin: 30px 0px;
+        margin: 10px 40px;
 
         box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         grid-column: 4;
+        grid-row: 3;
       }
 
       .temp4 {
@@ -377,45 +380,58 @@
         //      background-color: rgba(255, 255, 255, 0.25);
         background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
         border-radius: 16px;
-        margin: 30px 0px;
+        margin: 10px 40px;
 
         box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         grid-column: 5;
+        grid-row: 3;
       }
-
     }
-
-  }
-
-  .weather-container {
-    display: inline-grid;
-    grid-column-gap: 24vh;
-    grid-row-gap: 20px;
-    //      display: inline-block;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    margin-top: -20px;
-    color: black;
-    font-size: 48px;
-    font-weight: 700;
-    font-style: italic;
-    text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
-
+  
     .weather0 {
+      margin-top: -20px;
+      font-size: 48px;
+      font-weight: 700;
+      font-style: italic;
+      text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+      grid-row: 4;
       grid-column: 1;
     }
     .weather1 {
+      margin-top: -20px;
+      font-size: 48px;
+      font-weight: 700;
+      font-style: italic;
+      text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+      grid-row: 4;
       grid-column: 2;
     }
     .weather2 {
+      margin-top: -20px;
+      font-size: 48px;
+      font-weight: 700;
+      font-style: italic;
+      text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+      grid-row: 4;
       grid-column: 3;
     }
     .weather3 {
+      margin-top: -20px;
+      font-size: 48px;
+      font-weight: 700;
+      font-style: italic;
+      text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+      grid-row: 4;
       grid-column: 4;
     }
     .weather4 {
+      margin-top: -20px;
+      font-size: 48px;
+      font-weight: 700;
+      font-style: italic;
+      text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+      grid-row: 4;
       grid-column: 5;
     }
-  }
 
 </style>
