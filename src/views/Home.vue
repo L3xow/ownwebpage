@@ -102,6 +102,7 @@
                   this.country_code = json.results[0].address.countryCode;
                   this.latitude = json.results[0].position.lat;
                   this.longitude = json.results[0].position.lon;
+                  this.address = json.results[0].address.freeformAddress;
                   this.getWeatherData()
                 })
       },
@@ -142,7 +143,7 @@
 
 
       getCity() {
-         return fetch(`https://api.ipdata.co?api-key=test`)
+         return fetch(`https://api.ipdata.co?api-key=2ecd89902fd849aadc8c08a7457c38373b3feaa75c14b52829a8055d`)
                 .then(function(response) {
                   var contentType = response.headers.get("content-type");
                   if(contentType && contentType.includes("application/json")) {
